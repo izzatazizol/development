@@ -195,7 +195,7 @@ def main():
             uom_filepath = filedialog.askopenfilename(title="Select the UoM excel file")
             if filepath and uom_filepath:
                 pivot_table, empty_values, is_tally = process_lazada(filepath, uom_filepath)
-                customer_info = "LAZADA -"
+                customer_info = "LAZADA - NEUTROVIS"
                 create_csv(pivot_table, customer_info, empty_values, is_tally)
             else:
                 messagebox.showinfo("Information", "File selection cancelled.")
